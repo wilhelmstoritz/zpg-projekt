@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\SceneBuilderPlugins">
+      <UniqueIdentifier>{66de8961-cff8-416c-a4b9-8c1114ef58f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SceneBuilderPlugins">
+      <UniqueIdentifier>{fcf1880b-9678-4b3d-a1c3-6025ffbd688f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="launcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPlugin01.cpp">
+      <Filter>Source Files\SceneBuilderPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPlugin02a.cpp">
+      <Filter>Source Files\SceneBuilderPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPlugin02b.cpp">
+      <Filter>Source Files\SceneBuilderPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPlugin03.cpp">
+      <Filter>Source Files\SceneBuilderPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPlugin04.cpp">
+      <Filter>Source Files\SceneBuilderPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPlugin05a.cpp">
+      <Filter>Source Files\SceneBuilderPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPlugin05b.cpp">
+      <Filter>Source Files\SceneBuilderPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPluginEmptyScene.cpp">
+      <Filter>Source Files\SceneBuilderPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPluginTest.cpp">
+      <Filter>Source Files\SceneBuilderPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPluginMenu.cpp">
+      <Filter>Source Files\SceneBuilderPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPlugin05c.cpp">
+      <Filter>Source Files\SceneBuilderPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilderPlugin06.cpp">
+      <Filter>Source Files\SceneBuilderPlugins</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPlugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPlugin01.h">
+      <Filter>Header Files\SceneBuilderPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPlugin02a.h">
+      <Filter>Header Files\SceneBuilderPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPlugin02b.h">
+      <Filter>Header Files\SceneBuilderPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPlugin03.h">
+      <Filter>Header Files\SceneBuilderPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPlugin04.h">
+      <Filter>Header Files\SceneBuilderPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPlugin05a.h">
+      <Filter>Header Files\SceneBuilderPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPlugin05b.h">
+      <Filter>Header Files\SceneBuilderPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPluginEmptyScene.h">
+      <Filter>Header Files\SceneBuilderPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPluginTest.h">
+      <Filter>Header Files\SceneBuilderPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPluginMenu.h">
+      <Filter>Header Files\SceneBuilderPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPlugin05c.h">
+      <Filter>Header Files\SceneBuilderPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilderPlugin06.h">
+      <Filter>Header Files\SceneBuilderPlugins</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SceneBuilder.tpp">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

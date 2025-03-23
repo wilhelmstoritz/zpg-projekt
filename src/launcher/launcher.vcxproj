@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1dfe1bb8-6725-4ed8-8c88-bdcc70d4b214}</ProjectGuid>
+    <RootNamespace>launcher</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)..\resources\models.inc;$(ProjectDir)..\..\3rd\lib\assimp\include;$(ProjectDir)..\..\3rd\lib\soil\include;$(ProjectDir)..\..\3rd\lib\glm;$(ProjectDir)..\..\3rd\lib\glew\include;$(ProjectDir)..\..\3rd\lib\glfw-win32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\3rd\lib\assimp\lib\Win32\v141\Debug;$(ProjectDir)..\..\3rd\lib\soil\lib\x86\debug;$(ProjectDir)..\..\3rd\lib\glew\lib\Release\Win32;$(ProjectDir)..\..\3rd\lib\glfw-win32\lib-vc2022;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)..\resources\models.inc;$(ProjectDir)..\..\3rd\lib\assimp\include;$(ProjectDir)..\..\3rd\lib\soil\include;$(ProjectDir)..\..\3rd\lib\glm;$(ProjectDir)..\..\3rd\lib\glew\include;$(ProjectDir)..\..\3rd\lib\glfw-win32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\3rd\lib\assimp\lib\Win32\v141\Release;$(ProjectDir)..\..\3rd\lib\soil\lib\x86\release;$(ProjectDir)..\..\3rd\lib\glew\lib\Release\Win32;$(ProjectDir)..\..\3rd\lib\glfw-win32\lib-vc2022;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)..\resources\models.inc;$(ProjectDir)..\..\3rd\lib\assimp\include;$(ProjectDir)..\..\3rd\lib\soil\include;$(ProjectDir)..\..\3rd\lib\glm;$(ProjectDir)..\..\3rd\lib\glew\include;$(ProjectDir)..\..\3rd\lib\glfw-win64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\3rd\lib\assimp\lib\x64\v141\Debug;$(ProjectDir)..\..\3rd\lib\soil\lib\x64\debug;$(ProjectDir)..\..\3rd\lib\glew\lib\Release\x64;$(ProjectDir)..\..\3rd\lib\glfw-win64\lib-vc2022;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)..\resources\models.inc;$(ProjectDir)..\..\3rd\lib\assimp\include;$(ProjectDir)..\..\3rd\lib\soil\include;$(ProjectDir)..\..\3rd\lib\glm;$(ProjectDir)..\..\3rd\lib\glew\include;$(ProjectDir)..\..\3rd\lib\glfw-win64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\3rd\lib\assimp\lib\x64\v141\Release;$(ProjectDir)..\..\3rd\lib\soil\lib\x64\release;$(ProjectDir)..\..\3rd\lib\glew\lib\Release\x64;$(ProjectDir)..\..\3rd\lib\glfw-win64\lib-vc2022;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)resources\reslib;$(SolutionDir)gl3rd;$(SolutionDir)gloo;$(SolutionDir)appcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc140-mt.lib;soil.lib;opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)..\..\3rd\lib\glew\bin\Release\Win32\glew32.dll" "$(TargetDir)" /Y
+copy "$(ProjectDir)..\..\3rd\lib\assimp\bin\Win32\v141\Debug\assimp-vc140-mt.dll" "$(TargetDir)" /Y
+
+REM create resource directories
+REM mkdir "$(OutDir)resources"
+REM mkdir "$(OutDir)resources\fonts"
+REM mkdir "$(OutDir)resources\models.obj"
+REM mkdir "$(OutDir)resources\shaders.glsl"
+REM mkdir "$(OutDir)resources\textures"
+
+REM copy resource files
+xcopy "$(ProjectDir)..\resources\fonts\*.bin" "$(OutDir)resources\fonts\" /S /I /Y
+xcopy "$(ProjectDir)..\resources\models.obj\*.obj" "$(OutDir)resources\models.obj\" /S /I /Y
+xcopy "$(ProjectDir)..\resources\shaders.glsl\*.glsl" "$(OutDir)resources\shaders.glsl\" /S /I /Y
+xcopy "$(ProjectDir)..\resources\textures\*" "$(OutDir)resources\textures\" /S /I /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)resources\reslib;$(SolutionDir)gl3rd;$(SolutionDir)gloo;$(SolutionDir)appcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc140-mt.lib;soil.lib;opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)..\..\3rd\lib\glew\bin\Release\Win32\glew32.dll" "$(TargetDir)" /Y
+copy "$(ProjectDir)..\..\3rd\lib\assimp\bin\Win32\v141\Release\assimp-vc140-mt.dll" "$(TargetDir)" /Y
+
+REM create resource directories
+REM mkdir "$(OutDir)resources"
+REM mkdir "$(OutDir)resources\fonts"
+REM mkdir "$(OutDir)resources\models.obj"
+REM mkdir "$(OutDir)resources\shaders.glsl"
+REM mkdir "$(OutDir)resources\textures"
+
+REM copy resource files
+xcopy "$(ProjectDir)..\resources\fonts\*.bin" "$(OutDir)resources\fonts\" /S /I /Y
+xcopy "$(ProjectDir)..\resources\models.obj\*.obj" "$(OutDir)resources\models.obj\" /S /I /Y
+xcopy "$(ProjectDir)..\resources\shaders.glsl\*.glsl" "$(OutDir)resources\shaders.glsl\" /S /I /Y
+xcopy "$(ProjectDir)..\resources\textures\*" "$(OutDir)resources\textures\" /S /I /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)resources\reslib;$(SolutionDir)gl3rd;$(SolutionDir)gloo;$(SolutionDir)appcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc140-mt.lib;soil.lib;opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)..\..\3rd\lib\glew\bin\Release\x64\glew32.dll" "$(TargetDir)" /Y
+copy "$(ProjectDir)..\..\3rd\lib\assimp\bin\x64\v141\Debug\assimp-vc140-mt.dll" "$(TargetDir)" /Y
+
+REM create resource directories
+REM mkdir "$(OutDir)resources"
+REM mkdir "$(OutDir)resources\fonts"
+REM mkdir "$(OutDir)resources\models.obj"
+REM mkdir "$(OutDir)resources\shaders.glsl"
+REM mkdir "$(OutDir)resources\textures"
+
+REM copy resource files
+xcopy "$(ProjectDir)..\resources\fonts\*.bin" "$(OutDir)resources\fonts\" /S /I /Y
+xcopy "$(ProjectDir)..\resources\models.obj\*.obj" "$(OutDir)resources\models.obj\" /S /I /Y
+xcopy "$(ProjectDir)..\resources\shaders.glsl\*.glsl" "$(OutDir)resources\shaders.glsl\" /S /I /Y
+xcopy "$(ProjectDir)..\resources\textures\*" "$(OutDir)resources\textures\" /S /I /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)resources\reslib;$(SolutionDir)gl3rd;$(SolutionDir)gloo;$(SolutionDir)appcore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc140-mt.lib;soil.lib;opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)..\..\3rd\lib\glew\bin\Release\x64\glew32.dll" "$(TargetDir)" /Y
+copy "$(ProjectDir)..\..\3rd\lib\assimp\bin\x64\v141\Release\assimp-vc140-mt.dll" "$(TargetDir)" /Y
+
+REM create resource directories
+REM mkdir "$(OutDir)resources"
+REM mkdir "$(OutDir)resources\fonts"
+REM mkdir "$(OutDir)resources\models.obj"
+REM mkdir "$(OutDir)resources\shaders.glsl"
+REM mkdir "$(OutDir)resources\textures"
+
+REM copy resource files
+xcopy "$(ProjectDir)..\resources\fonts\*.bin" "$(OutDir)resources\fonts\" /S /I /Y
+xcopy "$(ProjectDir)..\resources\models.obj\*.obj" "$(OutDir)resources\models.obj\" /S /I /Y
+xcopy "$(ProjectDir)..\resources\shaders.glsl\*.glsl" "$(OutDir)resources\shaders.glsl\" /S /I /Y
+xcopy "$(ProjectDir)..\resources\textures\*" "$(OutDir)resources\textures\" /S /I /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="launcher.cpp" />
+    <ClCompile Include="SceneBuilder.cpp" />
+    <ClCompile Include="SceneBuilderPlugin.cpp" />
+    <ClCompile Include="SceneBuilderPlugin03.cpp" />
+    <ClCompile Include="SceneBuilderPlugin04.cpp" />
+    <ClCompile Include="SceneBuilderPlugin05a.cpp" />
+    <ClCompile Include="SceneBuilderPlugin05b.cpp" />
+    <ClCompile Include="SceneBuilderPlugin05c.cpp" />
+    <ClCompile Include="SceneBuilderPlugin06.cpp" />
+    <ClCompile Include="SceneBuilderPluginEmptyScene.cpp" />
+    <ClCompile Include="SceneBuilderPlugin01.cpp" />
+    <ClCompile Include="SceneBuilderPlugin02a.cpp" />
+    <ClCompile Include="SceneBuilderPlugin02b.cpp" />
+    <ClCompile Include="SceneBuilderPluginMenu.cpp" />
+    <ClCompile Include="SceneBuilderPluginTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="SceneBuilder.h" />
+    <ClInclude Include="SceneBuilderPlugin.h" />
+    <ClInclude Include="SceneBuilderPlugin03.h" />
+    <ClInclude Include="SceneBuilderPlugin04.h" />
+    <ClInclude Include="SceneBuilderPlugin05a.h" />
+    <ClInclude Include="SceneBuilderPlugin05b.h" />
+    <ClInclude Include="SceneBuilderPlugin05c.h" />
+    <ClInclude Include="SceneBuilderPlugin06.h" />
+    <ClInclude Include="SceneBuilderPluginEmptyScene.h" />
+    <ClInclude Include="SceneBuilderPlugin01.h" />
+    <ClInclude Include="SceneBuilderPlugin02a.h" />
+    <ClInclude Include="SceneBuilderPlugin02b.h" />
+    <ClInclude Include="SceneBuilderPluginMenu.h" />
+    <ClInclude Include="SceneBuilderPluginTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gloo\gloo.vcxproj">
+      <Project>{607ca920-3f6a-41c8-9366-dca5f626de14}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\resources\reslib\reslib.vcxproj">
+      <Project>{c243bfa6-c562-48a1-9f45-cea3630a5f75}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SceneBuilder.tpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

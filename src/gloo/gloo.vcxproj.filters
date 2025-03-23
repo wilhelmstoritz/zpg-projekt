@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\xtra | TransformationAnimation">
+      <UniqueIdentifier>{86188f02-ff58-4366-8052-fa569d500c8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\xtra | TransformationAnimation">
+      <UniqueIdentifier>{4d5c62e6-10b9-41c7-a464-f5f838ce321a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xtra | Model">
+      <UniqueIdentifier>{7396e684-053d-4187-ae7f-21eb6363ed1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\xtra | Model">
+      <UniqueIdentifier>{c7578364-19cf-4aa0-9895-8c8ec6712ac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\xtra | Light">
+      <UniqueIdentifier>{935ce7ba-3b84-4201-a11e-08fe1dcfe8a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xtra | Light">
+      <UniqueIdentifier>{626b8c64-2030-48fa-adc0-bbca697af2e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\xtra | Scene">
+      <UniqueIdentifier>{29a5df5d-de78-4ac5-841c-9a7b643301fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xtra | Scene">
+      <UniqueIdentifier>{11dca529-bbd7-4393-a2f5-fe60eadfc3d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FragmentShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VBO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationStep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationStepTranslate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationStepRotate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationStepScale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationStepMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderWarehouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelWarehouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightWarehouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureWarehouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IBO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationAnimationRandomMove.h">
+      <Filter>Header Files\xtra | TransformationAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationAnimationRotate.h">
+      <Filter>Header Files\xtra | TransformationAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelFirefly.h">
+      <Filter>Header Files\xtra | Model</Filter>
+    </ClInclude>
+    <ClInclude Include="LightFlashlight.h">
+      <Filter>Header Files\xtra | Light</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformationAnimationBezierCurve.h">
+      <Filter>Header Files\xtra | TransformationAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneFlashlight.h">
+      <Filter>Header Files\xtra | Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneFireball.h">
+      <Filter>Header Files\xtra | Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelFireball.h">
+      <Filter>Header Files\xtra | Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelLightEmitting.h">
+      <Filter>Header Files\xtra | Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelFireballBouncing.h">
+      <Filter>Header Files\xtra | Model</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FragmentShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transformation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationStepTranslate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationStepRotate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationStepScale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationStepMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationStep.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderWarehouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelWarehouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightWarehouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureWarehouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationAnimationRandomMove.cpp">
+      <Filter>Source Files\xtra | TransformationAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationAnimationRotate.cpp">
+      <Filter>Source Files\xtra | TransformationAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelFirefly.cpp">
+      <Filter>Source Files\xtra | Model</Filter>
+    </ClCompile>
+    <ClCompile Include="LightFlashlight.cpp">
+      <Filter>Source Files\xtra | Light</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformationAnimationBezierCurve.cpp">
+      <Filter>Source Files\xtra | TransformationAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneFlashlight.cpp">
+      <Filter>Source Files\xtra | Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneFireball.cpp">
+      <Filter>Source Files\xtra | Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelFireball.cpp">
+      <Filter>Source Files\xtra | Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelLightEmitting.cpp">
+      <Filter>Source Files\xtra | Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelFireballBouncing.cpp">
+      <Filter>Source Files\xtra | Model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ModelFactory.tpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="ModelWarehouse.tpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="Light.tpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="ShaderProgram.tpp">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
