@@ -11,7 +11,7 @@ V nastavení Visual Studia doporučuju v ***Tools/Options/Text Editor/File Exten
 | tpp       | Microsoft Visual C++ |
 
 ### Jak to rozchodit
-Stáhnout projekt z GitHubu a otevřít _src/ZPGproject.sln_. Nejjednodušší způsob je zvolit ve startovním menu MSVS ***Clone a repository*** a zadat url.
+Stáhnout projekt z GitHubu a otevřít _src/ZPGproject.sln_. Nejjednodušší způsob je zvolit ve startovním menu MSVS ***Clone a repository*** a zadat https://github.com/wilhelmstoritz/zpg-projekt _(repository location)_.
 
 > [!NOTE]
 > Před první kompilací doporučuju všechny projekty ve složce _examples_ unloadnout (pravé tlačítko na _examples_ a volba ***Unload Projects in Solution Folder***). Vyhnete se tak zdlouhavé kompilaci všeho a taky nějakým těm warningům které tam jsou ve zdrojácích.
