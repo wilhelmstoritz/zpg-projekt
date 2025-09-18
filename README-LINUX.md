@@ -1,17 +1,22 @@
 ## Linux
+### Přehled
+Testované distribuce: Fedora 41, Ubuntu 24.04.1 LTS.
+
 > [!CAUTION]
-> Wayland platforma není podporována z důvodu omezení GLEW knihovny; **je nutné použít X11**. Ujistěte se, že vaše prostředí běží pod X11, jinak aplikaci nebude možné spustit.
+> Wayland není podporován (omezení GLEW knihovny); **je nutné použít X11**.
 
-### Nastavení prostředí
-Je nutné mít nainstalované všechny potřebné vývojové nástroje (```gcc```, ```cmake``` + ```make```, atd.), všechny odpovídající systémové OpenGL/X11 knihovny a 3rd-party knihovny používané v projektu (jejich "debug" verze); také balíčky pro přístup na GitHub a balíček FFmpeg (používá se k nahrávání videa z obsahu okna aplikace).
+### Požadavky
+- GCC / Clang
+- CMake + make
+- OpenGL + X11 dev knihovny
+- FFmpeg (volitelně pro záznam)
+- Git (volitelně ```gh```)
 
-> [!NOTE]
-> Doporučuji nainstalovat balíček ```gh``` (navíc k univerzálnímu ```git```) pro pohodlnější práci s GitHub repozitáři; umožňuje pohodlné přihlašování klíčem apod.
-
-#### RHEL, Fedora a odvozené distribuce
+### Instalace balíčků
+#### RHEL / Fedora
 ```
 # development tools
-sudo dnf update
+sudo dnf -y update
 sudo dnf -y install gcc-c++ cmake make
 
 # libraries for OpenGL and related development; additional libraries and dependencies
@@ -26,7 +31,7 @@ sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-r
 sudo dnf -y install ffmpeg --allowerasing
 ```
 
-#### Debian, Ubuntu a odvozené distribuce
+#### Debian / Ubuntu
 ```
 # development tools
 sudo apt update
@@ -43,28 +48,28 @@ sudo apt install -y git gh
 sudo apt install -y ffmpeg
 ```
 
-> Pro jiné distra to bude podobné, Google/ChatGPT případně napoví přesné názvy balíčků...
-
-### Jak to rozchodit
-a) Nakonfigurovat přístup na GitHub (pokud ještě nemáte):
+### GitHub konfigurace (pokud není nastaveno)
 ```
 gh auth login
 git config --global user.email "you@mail.com"
 git config --global user.name "your name"
 ```
 
-b) Stáhnout projekt a zkompilovat:
+### Klonování a build projektu
 ```
-cd; mkdir src; cd src/
+mkdir -p ~/src && cd ~/src
 git clone https://github.com/wilhelmstoritz/zpg-projekt
-
-cd zpg-projekt/src/
+cd zpg-projekt/src
 cmake ./
-make
+make -j
 ```
 
-c) Binární soubory jsou v _build/_ adresáři; kvůli relativním cestám je nutné spouštět z adresáře, kde se nachází spustitelný soubor a knihovny:
+### Spuštění
 ```
-cd build/
+cd build
 ./ZPGproject
 ```
+Spouštět z adresáře s binárkou kvůli relativním cestám.
+
+> [!TIP]
+> V případě problémů s OpenGL zkontrolujte, že běží X11 (např. `echo $XDG_SESSION_TYPE`).

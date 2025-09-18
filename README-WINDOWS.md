@@ -1,21 +1,38 @@
 ## Windows
-### Nastavení IDE
-Projekt je nakonfigurovaný pro MS Visual Studio 2022; předpokládá nainstalovanou podporu pro C++. Nemělo by být potřeba nic doinstalovávat mimo vlastní MSVS, všechny potřebné 3rd-party knihovny, software a další data jsou součástí projektu.
+### Přehled
+Primární vývojová platforma. Projekt je nakonfigurován pro Microsoft Visual Studio 2022 (C++ workload). Všechny potřebné 3rd‑party knihovny, utility a data jsou součástí repozitáře.
 
-V nastavení Visual Studia doporučuju v ***Tools/Options/Text Editor/File Extension*** přidat následující nastavení pro editory:
+### Požadavky
+- Podpora OpenGL 4.x v ovladačích GPU
+- Microsoft Visual Studio 2022 (Desktop development with C++)
 
+#### Doporučené mapování přípon (***Tools → Options → Text Editor → File Extension***)
 | Extension | Editor               |
 |-----------|----------------------|
 | glsl	    | Microsoft Visual C++ |
 | mtl       | XML (Text) Editor    |
 | tpp       | Microsoft Visual C++ |
 
-### Jak to rozchodit
-Stáhnout projekt z GitHubu a otevřít _src/ZPGproject.sln_. Nejjednodušší způsob je zvolit ve startovním menu MSVS ***Clone a repository*** a zadat https://github.com/wilhelmstoritz/zpg-projekt _(repository location)_.
+### Klonování
+1. Otevřít VS → ***Clone a repository*** → URL `https://github.com/wilhelmstoritz/zpg-projekt`
+2. Otevřít řešení: `src/ZPGproject.sln`
 
 > [!NOTE]
-> Před první kompilací doporučuju všechny projekty ve složce _examples_ unloadnout (pravé tlačítko na _examples_ a volba ***Unload Projects in Solution Folder***). Vyhnete se tak zdlouhavé kompilaci všeho a taky nějakým těm warningům které tam jsou ve zdrojácích.
+> Pro rychlejší první build lze dočasně unloadnout všechny projekty ve složce _`examples`_ (pravé tlačítko → ***Unload Projects in Solution Folder***).
 
-SOIL knihovna dodaná na tutoriálech je poměrně stará, při kompilaci docházelo k nějakým chybám a problémům; zkompiloval jsem aktuální ze zdrojáků z GitHubu (zdrojové kódy nalinkovány, viz. adresářová struktura) - měla by fungovat v MSVS 2022, pro jinou verzi může být potřeba znova zkompilovat nebo použít původní; ta je v adresáři _3rd/_ také, jen přejmenovaná na _.zpgdefault_.
+### Build
+Připraveny všechny konfigurace: `Debug|Win32`, `Debug|x64`, `Release|Win32`, `Release|x64`.
 
-Prostředí je rozchozené a nakonfigurované pro všechny 'Debug/Release' + 'x86/x64' kombinace, nicméně některé knihovny (GLFW) nejsou zjevně zkompilované s /MD flagem a proto při 'Release' překladu dojde k chybám a překlad nedopadne. Už jsem to neřešil, kdo chce, ať si stáhne a zkompiluje vlastní verze knihoven.
+> [!TIP]
+> Doporučeno `Debug|Win32` pro konzistenci binárek a typů.
+
+### Spuštění
+1. Nastavte startup projekt (např. `launcher`).
+2. Build (Ctrl+Shift+B)
+3. Spusťte (F5 / Ctrl+F5)
+
+> [!NOTE]
+Použita aktuální verze SOIL zkompilovaná ze zdrojových kódů. Původní varianta z tutoriálů je dostupná jako `3rd/soil.zpgdefault/`.
+
+> [!CAUTION]
+> Některé dodané knihovny (např. GLFW) nemusí být sestavené s runtime volbou `/MD`, což může vést k chybám při `Release` buildu. V případě potřeby přeložte vlastní binárky s konzistentními přepínači.

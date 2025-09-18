@@ -1,14 +1,16 @@
 ## macOS
-Pro správu závislostí je použitý balíčkovací systém **Homebrew**, který zajišťuje konzistentní a snadnou instalaci potřebných externích knihoven; poskytuje aktuální verze balíků, umožňuje jednoduchou správu závislostí a je široce podporován komunitou.
+### Přehled
+Používá se **Homebrew** pro instalaci závislostí (instaluje také **Xcode Command Line Tools**). Testováno na macOS 14+.
 
-> Instalace Homebrew automaticky nainstaluje **Xcode Command Line Tools**, které obsahují nezbytné kompilátory a nástroje pro vývoj na macOS.
+### Požadavky
+- Homebrew
+- GCC / Clang
+- CMake + make
+- OpenGL + X11 dev knihovny
+- FFmpeg (volitelně pro záznam)
+- Git (volitelně ```gh```)
 
-### Nastavení prostředí
-Je nutné mít nainstalované všechny potřebné vývojové nástroje (c++ kompilátor ```gcc / clang++```, ```cmake``` + ```make```, atd.), všechny odpovídající systémové OpenGL/X11 knihovny a 3rd-party knihovny používané v projektu; také balíčky pro přístup na GitHub a balíček FFmpeg (používá se k nahrávání videa z obsahu okna aplikace).
-
-> [!NOTE]
-> Doporučuji nainstalovat balíček ```gh``` (navíc k univerzálnímu ```git```) pro pohodlnější práci s GitHub repozitáři; umožňuje pohodlné přihlašování klíčem apod.
-
+### Instalace nástrojů a knihoven
 ```
 # Homebrew; also installs Xcode Command Line Tools
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -28,36 +30,33 @@ brew install git gh
 brew install ffmpeg
 ```
 
-### Jak to rozchodit
-a) Nakonfigurovat přístup na GitHub (pokud ještě nemáte):
+### GitHub konfigurace (pokud není nastaveno)
 ```
 gh auth login
 git config --global user.email "you@mail.com"
 git config --global user.name "your name"
 ```
 
-b) Stáhnout, zkompilovat a nainstalovat SOIL knihovnu:
+### SOIL build (volitelné)
+Použijte pouze pokud systémová varianta není dostupná.
 ```
-cd; mkdir src; cd src/
+mkdir -p ~/src && cd ~/src
 git clone https://github.com/childhood/libSOIL.git
-
-cd libSOIL/
-make
-sudo make install
+cd libSOIL && make && sudo make install
 ```
 
-c) Stáhnout projekt a zkompilovat:
+### Klonování a build projektu
 ```
-cd; cd src/
+mkdir -p ~/src && cd ~/src
 git clone https://github.com/wilhelmstoritz/zpg-projekt
-
-cd zpg-projekt/src/
+cd zpg-projekt/src
 cmake ./
-make
+make -j
 ```
 
-d) Binární soubory jsou v _build/_ adresáři; kvůli relativním cestám je nutné spouštět z adresáře, kde se nachází spustitelný soubor a knihovny:
+### Spuštění
 ```
-cd build/
+cd build
 ./ZPGproject
 ```
+Spouštět z adresáře s binárkou kvůli relativním cestám.
