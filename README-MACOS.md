@@ -1,5 +1,4 @@
 ## macOS
-### Přehled
 Používá se **Homebrew** pro instalaci závislostí (instaluje také **Xcode Command Line Tools**). Testováno na macOS 14+.
 
 ### Požadavky

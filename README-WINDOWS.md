@@ -1,5 +1,4 @@
 ## Windows
-### Přehled
 Primární vývojová platforma. Projekt je nakonfigurován pro Microsoft Visual Studio 2022 (C++ workload). Všechny potřebné 3rd‑party knihovny, utility a data jsou součástí repozitáře.
 
 ### Požadavky

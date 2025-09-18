@@ -1,5 +1,4 @@
 ## Linux
-### Přehled
 Testované distribuce: Fedora 41, Ubuntu 24.04.1 LTS.
 
 > [!CAUTION]
