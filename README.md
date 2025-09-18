@@ -49,8 +49,7 @@ Projekt se dá psát na jakékoliv platformě; doporučuji se držet MSVS a Wind
 > - všude kde to dává smysl používejte (smart) pointery `std::unique/shared_ptr` místo `*ptr`; ušetří to dost času a nervů
 > - hlídejte si typovou bezpečnost (`enum class` místo `enum`, `GLint` a obecně GL proměnné tam kde se očekávají apod.)
 
-Vše ve zdrojácích s indexem (01, 02 .. 05a/05b, 06 apod.) souvisí s daným tutoriálem (tzn. scéna _03 "illuminated spheres"_ odpovídá tutoriálu 3 a používá zdrojové soubory k shaderům ve složce `resources/shaders.glsl/03/`).
-_Pozn: Přednášky a cvičení jsou očíslováné 1 - 10, tutoriálů bylo 6, proto číslování v kódu nemusí nutně korespondovat s číslem přednášky/cvičení které se daným tématem zabývá._
+Vše ve zdrojácích s indexem (01, 02 .. 05a/05b, 06 apod.) souvisí s daným tutoriálem (tzn. scéna _03 "illuminated spheres"_ odpovídá tutoriálu 3 a používá zdrojové soubory k shaderům ve složce `resources/shaders.glsl/03/`). _Pozn: Přednášky a cvičení jsou očíslováné 1 - 10, tutoriálů bylo 6, proto číslování v kódu nemusí nutně korespondovat s číslem přednášky/cvičení které se daným tématem zabývá._
 
 Občas v kódu narazíte na zakomentovanou "implementaci něčeho" - většinou se jedná o nějaké řešení které bylo nahrazeno jinou verzí; měl by tam být aspoň nějaký základní komentář o co jde.
 
@@ -75,7 +74,6 @@ V _launcheru_ zakomentovat/povolit scény které chcete pustit. Každá scéna m
 Veškerá konfigurace by měla být dostupná skrze `appcore/Config`; hardcoded by mělo být naprosté minimum věcí.
 
 #### Nahrávání videa z výstupu
-Občas se objeví požadavek na video z výstupu aplikace. Aby se zachytávání obrazovky/okna nemuselo řešit extra, je implementováno nahrávání obsahu okna pomocí FFmpeg. Stačí v `appcore/Config` nastavit
-```Config::SYSTEM_XTRA_RENDER_PROCESSING = true;```
+Občas se objeví požadavek na video z výstupu aplikace. Aby se zachytávání obrazovky/okna nemuselo řešit extra, je implementováno nahrávání obsahu okna pomocí FFmpeg. Stačí v `appcore/Config` nastavit `Config::SYSTEM_XTRA_RENDER_PROCESSING = true;`
 
 # 🍀 Good Luck!
