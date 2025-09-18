@@ -49,9 +49,10 @@ Projekt se dá psát na jakékoliv platformě; doporučuji se držet MSVS a Wind
 > - všude kde to dává smysl používejte (smart) pointery `std::unique/shared_ptr` místo `*ptr`; ušetří to dost času a nervů
 > - hlídejte si typovou bezpečnost (`enum class` místo `enum`, `GLint` a obecně GL proměnné tam kde se očekávají apod.)
 
-> [!NOTE]
-> Vše ve zdrojácích s indexem (01, 02 .. 05a/05b, 06 apod.) souvisí s daným tutoriálem (scéna 03 "illuminated spheres" odpovídá tutoriálu 3 a používá zdrojové soubory k shaderům ve složce `resources/shaders.glsl/03/`). _Pozn: Přednášky a cvičení jsou očíslováné 1 - 10, tutoriálů bylo 6, proto číslování v kódu nemusí nutně korespondovat s číslem přednášky/cvičení které se daným tématem zabývá._
-> Občas v kódu narazíte na zakomentovanou "implementaci něčeho" - většinou se jedná o nějaké řešení které bylo nahrazeno jinou verzí; měl by tam být aspoň nějaký základní komentář o co jde.
+Vše ve zdrojácích s indexem (01, 02 .. 05a/05b, 06 apod.) souvisí s daným tutoriálem (tzn. scéna _03 "illuminated spheres"_ odpovídá tutoriálu 3 a používá zdrojové soubory k shaderům ve složce `resources/shaders.glsl/03/`).
+_Pozn: Přednášky a cvičení jsou očíslováné 1 - 10, tutoriálů bylo 6, proto číslování v kódu nemusí nutně korespondovat s číslem přednášky/cvičení které se daným tématem zabývá._
+
+Občas v kódu narazíte na zakomentovanou "implementaci něčeho" - většinou se jedná o nějaké řešení které bylo nahrazeno jinou verzí; měl by tam být aspoň nějaký základní komentář o co jde.
 
 ### Jak to používat
 V _launcheru_ zakomentovat/povolit scény které chcete pustit. Každá scéna má k dispozici nějaké ovládání; viz. info v titulku okna.
