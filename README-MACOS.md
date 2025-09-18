@@ -8,7 +8,7 @@ Používá se **Homebrew** pro instalaci závislostí (instaluje také **Xcode C
 - CMake + make
 - OpenGL + X11 dev knihovny
 - FFmpeg (volitelně pro záznam)
-- Git (volitelně ```gh```)
+- Git (volitelně `gh`)
 
 ### Instalace nástrojů a knihoven
 ```

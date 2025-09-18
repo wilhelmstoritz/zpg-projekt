@@ -6,7 +6,7 @@ Primární vývojová platforma. Projekt je nakonfigurován pro Microsoft Visual
 - Podpora OpenGL 4.x v ovladačích GPU
 - Microsoft Visual Studio 2022 (Desktop development with C++)
 
-Doporučené mapování přípon (***Tools → Options → Text Editor → File Extension***)
+Doporučené mapování přípon VS (***Tools → Options → Text Editor → File Extension***)
 | Extension | Editor               |
 |-----------|----------------------|
 | glsl	    | Microsoft Visual C++ |
@@ -18,7 +18,7 @@ Doporučené mapování přípon (***Tools → Options → Text Editor → File 
 2. Otevřít řešení: `src/ZPGproject.sln`
 
 > [!TIP]
-> Pro rychlejší první build lze dočasně unloadnout všechny projekty ve složce _`examples`_ (pravé tlačítko → ***Unload Projects in Solution Folder***).
+> Pro rychlejší první build lze dočasně unloadnout všechny projekty ve složce `examples` (pravé tlačítko → ***Unload Projects in Solution Folder***).
 
 ### Build
 Připraveny všechny konfigurace: `Debug|Win32`, `Debug|x64`, `Release|Win32`, `Release|x64`.
